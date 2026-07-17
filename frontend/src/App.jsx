@@ -18,7 +18,7 @@ export default function App() {
     setActiveHotspot(null);
     
     try {
-      const res = await axios.post('http://localhost:5000/api/generate-story', { theme });
+      const res = await axios.post('https://flam-interactive-story.onrender.com/api/generate-story', { theme });
       const data = res.data;
       
       const imageUrl = data.imageSearchTerm 
